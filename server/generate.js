@@ -30,55 +30,54 @@ module.exports = function generate(branch, nbrStar, vWidth, vHeitght, vCore) {
 
   // branch generation
   let z = 1;
-  for (let j=(360/(branch+0.5)); j<360; j=j+(360/(branch+0.5))) {
+  for (let j = (360 / (branch + 0.5)); j < 360; j = j + (360 / (branch + 0.5))) {
     z--;
     let xx = 0;
     let coef;
     for (let i = 0; i < starPerBranch; i++) {
-    	for (let r=0; r<9; r++) {
-	  		if (i<=(starPerBranch/r)) {
-	  			coef = ((30/9)*r)+1;
+    	for (let r = 0; r < 9; r++) {
+	  		if (i <= (starPerBranch / r)) {
+	  			coef = ((30 / 9) * r) + 1;
 	  		}
 	  	}
 	  	norm = i / (starPerBranch+j);
 	  	const Variation = Math.random() * (vWidth - (-vWidth)) + (-vWidth);
-	  	const theta = (norm *5* Math.PI + Variation)+j;
+	  	const theta = (norm * 5 * Math.PI + Variation) + j;
 	  	const phi = Math.random() * (vHeitght - (-vHeitght)) + (-vHeitght);
 	  	const distance = norm * starPerBranch;
 	  	x = distance * Math.sin(theta) * Math.cos(phi);
 	  	y= distance * Math.sin(theta) * Math.sin(phi);
 	  	z =distance * Math.cos(theta);
-	  	if (xx>=special) {
-	  		xx=special-special2;
+	  	if (xx >= special) {
+	  		xx = special - special2;
 	  	} else {
-		   xx=xx+5;
+		   xx = xx + 5;
 	  	}
 	  	star.push([x, y, z, alea(data.speccolor[0])]);
     	}
 
     xx = 0;
-    coef;
     for (let i = 0; i < starPerBranch; i++) {
-	  for (let r=0; r<9; r++) {
-	  	if (i<=(starPerBranch/r)) {
-	  		coef = ((30/9)*r)+1;
+	  for (let r = 0; r < 9; r++) {
+	  	if (i <= (starPerBranch / r)) {
+	  		coef = ((30 / 9) * r) + 1;
 	  	}
 	  }
 
-	  norm = i / (starPerBranch+j);
+	  norm = i / (starPerBranch + j);
 
 
 	  const Variation = Math.random() * ((vWidth/3) - (-(vWidth/3))) + (-(vWidth/3));
-	  const theta = (norm*coef * Math.PI + Variation)+j;
-	  const phi = Math.random() * ((vHeitght/3) - (-(vHeitght/3))) + (-(vHeitght/3));
+	  const theta = (norm * coef * Math.PI + Variation) + j;
+	  const phi = Math.random() * ((vHeitght/3) - (-(vHeitght / 3))) + (-(vHeitght / 3));
 	  const distance = norm * starPerBranch;
 	   x = distance * (Math.sin(theta) * (Math.cos(phi)));
-	   y= distance * (Math.sin(theta) * (Math.sin(phi)));
-	   z =distance * Math.cos(theta);
-	   if (xx>=special) {
-	   		xx=special-special2;
+	   y = distance * (Math.sin(theta) * (Math.sin(phi)));
+	   z = distance * Math.cos(theta);
+	   if (xx >= special) {
+	   		xx = special - special2;
 	   } else {
-		   xx=xx+5;
+		   xx = xx + 5;
 	   }
 	   star.push([x, y, z, alea(data.speccolor[1])]);
     }
@@ -86,13 +85,13 @@ module.exports = function generate(branch, nbrStar, vWidth, vHeitght, vCore) {
 
   // core level 1
 
-  for (let i = 0; i < (starPerBranch/5*2); i++) {
-    const Varia = starPerBranch*vCore;
+  for (let i = 0; i < (starPerBranch / 5 * 2); i++) {
+    const Varia = starPerBranch * vCore;
     const Variation = Math.random() * (Varia - (-Varia)) + (-Varia);
     const theta = ((Math.random() * 360) * Math.PI + Variation);
-    const x=Math.cos(theta*Math.PI/180)*Variation;
-    const y=Math.sin(theta*Math.PI/180)*Variation;
-    const z=Math.random()*Variation;
+    const x = Math.cos(theta * Math.PI / 180) * Variation;
+    const y = Math.sin(theta * Math.PI / 180) * Variation;
+    const z = Math.random() * Variation;
     star.push([x, y, z, alea(data.speccolor[2])]);
   }
 
@@ -103,24 +102,23 @@ module.exports = function generate(branch, nbrStar, vWidth, vHeitght, vCore) {
     const Varia = starPerBranch*0.7;
     const Variation = Math.random() * (Varia - (-Varia)) + (-Varia);
     const theta = ((Math.random() * 360) * Math.PI + Variation);
-    const x=Math.cos(theta*Math.PI/180)*Variation;
-    const y=Math.sin(theta*Math.PI/180)*Variation;
-    const z=Math.random()*Variation;
+    const x = Math.cos(theta * Math.PI / 180) * Variation;
+    const y = Math.sin(theta * Math.PI / 180) * Variation;
+    const z= Math.random() * Variation;
     star.push([x, y, z, alea(data.speccolor[3])]);
   }
 
   // core level 3
 
   for (let i = 0; i < starPerBranch/5; i++) {
-    const Varia = starPerBranch*1;
+    const Varia = starPerBranch * 1;
     const Variation = Math.random() * (Varia - (-Varia)) + (-Varia);
     const theta = ((Math.random() * 360) * Math.PI + Variation);
-    const x=Math.cos(theta*Math.PI/180)*Variation;
-    const y=Math.sin(theta*Math.PI/180)*Variation;
-    const z=Math.random()*Variation;
+    const x = Math.cos(theta * Math.PI/180) * Variation;
+    const y = Math.sin(theta * Math.PI/180) * Variation;
+    const z = Math.random() * Variation;
     star.push([x, y, z, alea(data.speccolor[4])]);
   }
-
   return star;
 // fs.writeFileSync('output.json', JSON.stringify(star, null, 2));
 };
