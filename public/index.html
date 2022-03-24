@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Galaxye</title>
+    <style>
+        body { margin: 0; background:black; }
+        canvas { width: 100%; height: 100% }
+        #start {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		
+		#startButton{
+				border: none;
+    			color: blue;
+    			transform: scale(4);
+    			background-color: #bdea21;
+    			box-shadow: 1px 1px 0px 1px #bdea21cc;
+		}
+		
+		#startButton:hover{
+			border: none;
+    		color: white;
+    		transform: scale(4);
+    		background-color: #44ea21;
+    		box-shadow: 1px 1px 0px 1px #21ea3fcc;
+		}
+		
+		div{
+			background-color: #ffffffa6;
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width: 20%;
+		    height: fit-content;
+		    display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		section,article{
+			width:100%;
+			display: flex;
+			    flex-direction: row;
+			    flex-wrap: wrap;
+			    justify-content: center;
+			    align-items: center;
+		}
+
+		subm{
+			padding:5%;
+			background-color:blue;
+			margin-bottom:4%;
+			color:white;
+			border-radius:50px;
+		}
+		
+		subm:hover{
+			cursor:pointer;
+			background-color:green;
+		}
+		
+		canvas{
+			display:none;
+			z-index:1;
+		}
+		
+		progress{
+			position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		    width: 50%;
+		    height: 10%;
+		    z-index:-1;
+		}
+    </style>
+</head>
+<body>
+<div>
+	<section client>
+	<article>
+	<p>star radius</p>
+	<input type="range" value="1" min="1" step="1" max="100" oninput="this.nextElementSibling.value = this.value">
+	<output>1</output>
+	</article>
+	<article>
+	<p>star frame</p>
+	<input type="range" value="10" min="1" step="1" max="100" oninput="this.nextElementSibling.value = this.value">
+	<output>10</output>
+	</article>
+	<article>
+	<p>scale</p>
+	<input type="range" value="4" min="1" step="1" max="100" oninput="this.nextElementSibling.value = this.value">
+	<output>4</output>
+	</article>
+	<article>
+		<subm client>Send</subm>
+	</article>
+	</section>
+</div>
+<progress max="1000" value="0"></progress>
+<div id="script">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/three.js"></script>
+<script src="assets/js/TrackballControls.js"></script>	
+<script src="assets/js/app.js"></script>
+</div>
+</body>
+</html>
