@@ -1,4 +1,4 @@
-# galaxy-generator-nodejs
+# Galaxy Generator NodeJS
 
 * [Example](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
