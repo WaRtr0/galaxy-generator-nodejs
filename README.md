@@ -1,4 +1,4 @@
-<h1>Galaxy Generator NodeJS</h1>
+<center><h1>Galaxy Generator NodeJS</h1></center>
 
 # About
 
