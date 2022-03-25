@@ -1,5 +1,3 @@
-# Galaxy Generator NodeJS
-
 <h1 align="center">Galaxy Generator NodeJS</h1>
 
 <div align="center">
