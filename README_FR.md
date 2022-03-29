@@ -22,7 +22,7 @@ Visible [ici](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 
 # Utilisation [1]
-<div id="#uti1"></div>
+<div id="uti1"></div>
 Si vous souhaitez juste utiliser la génération (côté serveur)
 
 
