@@ -1,12 +1,5 @@
 <h1 align="center">Galaxy Generator NodeJS</h1>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <div align="center">
   <a href="https://github.com/WaRtrO89/galaxy-generator-nodejs/blob/main/README.md">
     <img src="https://user-images.githubusercontent.com/25512932/160092140-bee4eee1-e755-48b7-b220-1d94adf14e16.png" alt="en">
@@ -28,7 +21,7 @@ Visible [ici](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 ![screen](https://user-images.githubusercontent.com/25512932/160088977-3e828c17-1a7d-49e6-a15c-67cdecd51c56.gif)
 
 
-# Utilisation
+# Utilisation [1]
 
 Si vous souhaitez juste utiliser la génération (côté serveur)
 
@@ -60,3 +53,13 @@ D'autres paramètres :
 
 * vCore : Variation du noyau (hauteur et largeur)
 
+# Utilisation [2]
+
+Si vous souhaitez tout utiliser vous avez juste à transférer le continue du repository dans un dossier sur votre pc.
+
+[Installer](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, si cela n'est pas fait
+
+Et installer les packages :
+```
+npm install fs express http
+```
