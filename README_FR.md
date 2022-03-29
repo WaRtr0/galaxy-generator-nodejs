@@ -69,3 +69,7 @@ npm install fs express http
 ```
 
 Regarder <a href="#uti1">Utilisation [1]</a> pour pouvoir modifier les paramètres de la fonction galaxy.
+
+# Contact
+
+Discord : WaRtrO#6293
