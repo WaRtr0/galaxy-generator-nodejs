@@ -1,5 +1,12 @@
 <h1 align="center">Galaxy Generator NodeJS</h1>
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 <div align="center">
   <a href="https://github.com/WaRtrO89/galaxy-generator-nodejs/blob/main/README.md">
     <img src="https://user-images.githubusercontent.com/25512932/160092140-bee4eee1-e755-48b7-b220-1d94adf14e16.png" alt="en">
@@ -25,6 +32,9 @@ Visible [ici](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 Si vous souhaitez juste utiliser la génération (côté serveur)
 
+Installer les packages :
+```npm install fs```
+
 Faites un ``require`` de la fonction à partir du fichier ``generate.js``  dans le dossier ``/server``;
 
 Exemple : 
@@ -49,9 +59,4 @@ D'autres paramètres :
 * vHeitght : Variation hauteur de la galxy
 
 * vCore : Variation du noyau (hauteur et largeur)
-  
- *nbrStar:<stars quantity>
-*vWidth:<galaxy variation width>
-*vHeitght:<galaxy variation height>
-*vCore:<core variation>
 
