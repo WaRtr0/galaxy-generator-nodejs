@@ -42,10 +42,10 @@ const arrayStars = galaxy({branch:16000}); //return array of 16000 stars
 
 D'autres paramètres :
 
-*nbrStar: Quantité d'étoiles
-*vWidth: Variation largeur de la galaxy
-*vHeitght: Variation hauteur de la galxy
-*vCore: Variation du noyau (hauteur et largeur)
+-nbrStar: Quantité d'étoiles
+-vWidth: Variation largeur de la galaxy
+-vHeitght: Variation hauteur de la galxy
+-vCore: Variation du noyau (hauteur et largeur)
   
  *nbrStar:<stars quantity>
 *vWidth:<galaxy variation width>
