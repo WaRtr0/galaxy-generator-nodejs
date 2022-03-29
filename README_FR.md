@@ -44,12 +44,12 @@ const arrayStars = galaxy();
 La fonction ``galaxy()`` renvoie le nombre par défaut d'étoiles (12 000) si vous souhaitez modifier le nombre et d'autres paramètres faites ceci :
 
 ```
-const arrayStars = galaxy({branch:16000}); //return array of 16000 stars
+const arrayStars = galaxy({nbrStar:16000}); //return array of 16000 stars
 ```
 
 D'autres paramètres :
 
-* nbrStar : Quantité d'étoiles
+* branch : Nombre de branche
 
 * vWidth : Variation largeur de la galaxie
 
