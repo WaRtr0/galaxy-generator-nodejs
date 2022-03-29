@@ -69,3 +69,7 @@ npm install fs express http
 ```
 
 Look at <a href="#uti1">Utilization [1]</a> to be able to change galaxy function settings.
+
+# Contact
+
+Discord : WaRtrO#6293
