@@ -22,3 +22,13 @@ Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 ![screen](https://user-images.githubusercontent.com/25512932/160088977-3e828c17-1a7d-49e6-a15c-67cdecd51c56.gif)
 
 # Utilisation
+
+Si vous souhaitez juste utiliser la génération (côtè serveur)
+
+Faites un "require" du fichier "generate.js" dans le dossier "server" et utiliser .generate();
+
+Exemple : 
+
+```
+
+```
