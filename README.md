@@ -25,7 +25,7 @@ Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 Si vous souhaitez juste utiliser la génération (côtè serveur)
 
-Faites un "require" de la fonction à partir du fichier "generate.js" dans le server;
+Faites un ``require`` de la fonction à partir du fichier ``generate.js``  dans le ``/server``;
 
 Exemple : 
 
