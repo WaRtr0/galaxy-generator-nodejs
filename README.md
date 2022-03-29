@@ -23,7 +23,7 @@ Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 # Utilisation
 
-Si vous souhaitez juste utiliser la génération (côtè serveur)
+Si vous souhaitez juste utiliser la génération (côté serveur)
 
 Faites un ``require`` de la fonction à partir du fichier ``generate.js``  dans le ``/server``;
 
