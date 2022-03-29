@@ -25,10 +25,11 @@ Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 Si vous souhaitez juste utiliser la génération (côtè serveur)
 
-Faites un "require" du fichier "generate.js" dans le dossier "server" et utiliser .generate();
+Faites un "require" de la fonction à partir du fichier "generate.js" dans le server;
 
 Exemple : 
 
-```
-
+```js
+const galaxy = require('./server/generate.js');
+const arrayStars = galaxy();
 ```
