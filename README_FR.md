@@ -34,3 +34,5 @@ const galaxy = require('./server/generate.js');
 const arrayStars = galaxy();
 ```
 
+La fonction ``galaxy()`` renvoie le nombre par défaut d'étoiles si vous souhaitez modifier le nombre et d'autres paramètres.
+
