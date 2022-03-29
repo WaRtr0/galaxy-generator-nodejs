@@ -27,43 +27,43 @@ If you just want to use the generate (backend)
 
 [Install](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, if not done
 
-Install packages:
+Install package:
 ```npm install fs```
 
-Faites un ``require`` de la fonction à partir du fichier ``generate.js``  dans le dossier ``/server``;
+Do a ``require`` function of the  ``generate.js``  file in the folder ``/server``;
 
-Exemple : 
+Example : 
 
 ```js
 const galaxy = require('./server/generate.js');
 const arrayStars = galaxy();
 ```
 
-La fonction ``galaxy()`` renvoie le nombre par défaut d'étoiles (12 000) si vous souhaitez modifier le nombre et d'autres paramètres faites ceci :
+The function ``galaxy()`` returns the default number of stars (12,000) if you want to change the number and other parameters do this:
 
 ```
 const arrayStars = galaxy({branch:16000}); //return array of 16000 stars
 ```
 
-D'autres paramètres :
+Other parameters :
 
-* nbrStar : Quantité d'étoiles
+* nbrStar : Number of stars
 
-* vWidth : Variation largeur de la galaxie
+* vWidth : Galaxy width variation
 
-* vHeitght : Variation hauteur de la galaxie
+* vHeitght : Galaxy height variation
 
-* vCore : Variation du noyau (hauteur et largeur)
+* vCore : Core variation (height and width)
 
 # Utilization [2]
 
-Si vous souhaitez tout utiliser vous avez juste à transférer le continue du repository dans un dossier sur votre pc.
+If you want to use everything you just have to transfer the contents of the repository to a folder on your pc.
 
-[Installer](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, si cela n'est pas fait
+[Install](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, if not done
 
-Et installer les packages :
+And install packages
 ```
 npm install fs express http
 ```
 
-Regarder <a href="#uti1">Utilization [1]</a> pour pouvoir modifier les paramètres de la fonction galaxy.
+Look at <a href="#uti1">Utilization [1]</a> to be able to change galaxy function settings.
