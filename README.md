@@ -20,3 +20,50 @@ The script fetches the array and renders the galaxy on the client side with [Thr
 Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 ![screen](https://user-images.githubusercontent.com/25512932/160088977-3e828c17-1a7d-49e6-a15c-67cdecd51c56.gif)
+
+# Utilization [1]
+
+If you just want to use the generate (backend)
+
+[Install](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, if not done
+
+Install packages:
+```npm install fs```
+
+Faites un ``require`` de la fonction à partir du fichier ``generate.js``  dans le dossier ``/server``;
+
+Exemple : 
+
+```js
+const galaxy = require('./server/generate.js');
+const arrayStars = galaxy();
+```
+
+La fonction ``galaxy()`` renvoie le nombre par défaut d'étoiles (12 000) si vous souhaitez modifier le nombre et d'autres paramètres faites ceci :
+
+```
+const arrayStars = galaxy({branch:16000}); //return array of 16000 stars
+```
+
+D'autres paramètres :
+
+* nbrStar : Quantité d'étoiles
+
+* vWidth : Variation largeur de la galaxie
+
+* vHeitght : Variation hauteur de la galaxie
+
+* vCore : Variation du noyau (hauteur et largeur)
+
+# Utilization [2]
+
+Si vous souhaitez tout utiliser vous avez juste à transférer le continue du repository dans un dossier sur votre pc.
+
+[Installer](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, si cela n'est pas fait
+
+Et installer les packages :
+```
+npm install fs express http
+```
+
+Regarder <a href="#uti1">Utilization [1]</a> pour pouvoir modifier les paramètres de la fonction galaxy.
