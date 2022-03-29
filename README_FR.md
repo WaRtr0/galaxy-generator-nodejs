@@ -25,6 +25,9 @@ Visible [ici](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 Si vous souhaitez juste utiliser la génération (côté serveur)
 
+
+[Installer](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, si cela n'est pas fait
+
 Installer les packages :
 ```npm install fs```
 
@@ -47,9 +50,9 @@ D'autres paramètres :
 
 * nbrStar : Quantité d'étoiles
 
-* vWidth : Variation largeur de la galaxy
+* vWidth : Variation largeur de la galaxie
 
-* vHeitght : Variation hauteur de la galxy
+* vHeitght : Variation hauteur de la galaxie
 
 * vCore : Variation du noyau (hauteur et largeur)
 
