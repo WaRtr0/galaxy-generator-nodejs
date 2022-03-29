@@ -7,7 +7,7 @@ const galaxy = require('./server/generate.js');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/generate', function(req, res) {
-  fs.writeFileSync('public/data/output.json', JSON.stringify(galaxy(), null, 2)); // galaxy(<branch quantity>,<stars quantity>,<galaxy variation width>,<galaxy variation height>,<core variation>)  default: galaxy(12000,0.4,0.4,0.2)
+  fs.writeFileSync('public/data/output.json', JSON.stringify(galaxy(), null, 2)); // galaxy({branch:<branch quantity>,nbrStar:<stars quantity>,vWidth:<galaxy variation width>,vHeitght:<galaxy variation height>,vCore:<core variation>})
   res.redirect('/');
 });
 
