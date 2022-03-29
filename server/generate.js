@@ -11,14 +11,44 @@ function alea(dt) {
   return dt[index];
 }
 
-module.exports = function generate(branch, nbrStar, vWidth, vHeitght, vCore) {
-  if (branch == undefined) { // default
-    branch = 5; // Galaxy branch quantity
-    nbrStar = 12000; // (approximate) Total number of stars return
-    vWidth = 0.4; // Galaxy variation width
-    vHeitght = 0.4; // Galaxy variation height
-    vCore=0.2; // core variation width & height
-  }
+module.exports = function generate(option) {
+// branch, nbrStar, vWidth, vHeitght, vCore
+
+if(option.branch==undefined){
+	branch = 5; // Galaxy branch quantity
+}
+else{
+	branch=option.branch;
+}
+
+if(option.nbrStar==undefined){
+	nbrStar = 12000; // (approximate) Total number of stars return
+}
+else{
+	nbrStar=option.nbrStar;
+}
+
+if(option.vWidth==undefined){
+	vWidth = 0.4; // Galaxy variation width
+}
+else{
+	vWidth=option.vWidth;
+}
+
+if(option.vHeitght==undefined){
+	vHeitght = 0.4; // Galaxy variation height
+}
+else{
+	vHeitght=option.vHeitght;
+}
+
+if(option.vCore==undefined){
+	vCore=0.2; // core variation width & height
+}
+else{
+	vCore=option.vCore;
+}
+
 
   const special = 70;
   const special2 = 69;
