@@ -19,7 +19,7 @@ The script fetches the array and renders the galaxy on the client side with [Thr
 
 Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
-<img src="https://user-images.githubusercontent.com/25512932/160088977-3e828c17-1a7d-49e6-a15c-67cdecd51c56.gif" alt="screen">
+<img width="100%" src="https://user-images.githubusercontent.com/25512932/160088977-3e828c17-1a7d-49e6-a15c-67cdecd51c56.gif" alt="screen">
 
 <div id="uti1"></div>
 
