@@ -44,12 +44,12 @@ const arrayStars = galaxy();
 The function ``galaxy()`` returns the default number of stars (12,000) if you want to change the number and other parameters do this:
 
 ```
-const arrayStars = galaxy({branch:16000}); //return array of 16000 stars
+const arrayStars = galaxy({nbrStar:16000}); //return array of 16000 stars
 ```
 
 Other parameters :
 
-* nbrStar : Number of stars
+* branch : Number of branch
 
 * vWidth : Galaxy width variation
 
