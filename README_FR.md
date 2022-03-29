@@ -22,7 +22,7 @@ Visible [ici](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 
 # Utilisation [1]
-
+<div id="#uti1"></div>
 Si vous souhaitez juste utiliser la génération (côté serveur)
 
 
@@ -66,3 +66,5 @@ Et installer les packages :
 ```
 npm install fs express http
 ```
+
+Regarder <a href="#uti1">Utilisation [1]</a> pour pouvoir modifier les paramètres de la fonction galaxy.
