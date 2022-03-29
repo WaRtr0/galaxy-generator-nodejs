@@ -23,7 +23,7 @@ Viewable [here](https://wartro89.github.io/galaxy-generator-nodejs/public/)
 
 <div id="uti1"></div>
 
-# Utilization [1]
+# Use [1]
 
 If you just want to use the generate (backend)
 
@@ -57,7 +57,7 @@ Other parameters :
 
 * vCore : Core variation (height and width)
 
-# Utilization [2]
+# Use [2]
 
 If you want to use everything you just have to transfer the contents of the repository to a folder on your pc.
 
