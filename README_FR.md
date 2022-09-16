@@ -59,7 +59,7 @@ D'autres paramètres :
 
 # Utilisation [2]
 
-Si vous souhaitez tout utiliser vous avez juste à transférer le continue du repository dans un dossier sur votre pc.
+Si vous souhaitez tout utiliser vous avez juste à transférer le contenue du repository dans un dossier sur votre pc.
 
 [Installer](https://nodejs.dev/learn/how-to-install-nodejs) nodeJs, si cela n'est pas fait
 
